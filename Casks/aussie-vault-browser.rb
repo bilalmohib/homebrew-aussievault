@@ -11,17 +11,6 @@ cask "aussie-vault-browser" do
 
   app "Aussie Vault Browser.app"
 
-  postflight do
-    # Set permissions for security features
-    system_command "/usr/bin/codesign",
-                   args: [
-                     "--verify",
-                     "--verbose",
-                     "#{appdir}/Aussie Vault Browser.app"
-                   ],
-                   sudo: false
-  end
-
   zap trash: [
     "~/Library/Application Support/aussie-vault-browser",
     "~/Library/Caches/com.aussievault.browser",
