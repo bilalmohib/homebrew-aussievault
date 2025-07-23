@@ -1,5 +1,5 @@
 cask "aussie-vault-browser" do
-  version "1.0.2"
+  version "1.0.0"
   sha256 :no_check
 
   url "https://github.com/bilalmohib/aussie-vault-browser-releases/releases/download/v#{version}/AussieVaultBrowser-#{version}.dmg"
